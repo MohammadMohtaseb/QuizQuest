@@ -1,0 +1,153 @@
+.navbar {
+  width: auto;
+  height: 2.5rem;
+  background-color: rgb(79, 152, 255);
+  display: flex;
+  flex-direction: row;
+}
+.navtabs {
+  display: flex;
+  flex-direction: row;
+  margin-left: 77rem;
+  margin-top: 0rem;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  justify-content: space-between;
+  height: 15rem;
+  margin: 2rem;
+}
+.grid1 {
+  display: grid;
+  border: 0.05rem solid rgb(209, 206, 206);
+  width: 30%;
+  height: 10rem;
+  background-color: white;
+}
+.gg1 {
+  grid-row: 1;
+  grid-column: 1;
+  padding-top: 1rem;
+  border-bottom: 0.05rem solid rgb(209, 206, 206);
+  border-right: 0.05rem solid rgb(209, 206, 206);
+  display: flex;
+  flex-direction: row;
+  padding-left: 2rem;
+}
+.gg2 {
+  grid-row: 1;
+  grid-column: 2;
+  padding-top: 1rem;
+  border-bottom: 0.05rem solid rgb(209, 206, 206);
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+.gg3 {
+  grid-row: 2;
+  border-right: 0.05rem solid rgb(209, 206, 206);
+  grid-column: 1;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+.gg4 {
+  grid-row: 2;
+  margin-top: 1rem;
+  grid-column: 2;
+  display: flex;
+  padding-left: 2rem;
+  flex-direction: row;
+}
+.grid2 {
+  display: grid;
+  width: 30%;
+  border: 0.05rem solid rgb(209, 206, 206);
+  height: 10rem;
+  background-color: white;
+}
+.sg1 {
+  grid-row: 1;
+  grid-column: 1;
+  padding-top: 1rem;
+  border-bottom: 0.05rem solid rgb(209, 206, 206);
+  border-right: 0.05rem solid rgb(209, 206, 206);
+  display: flex;
+  padding-left: 2rem;
+  flex-direction: row;
+}
+.sg2 {
+  grid-row: 1;
+  grid-column: 2;
+  padding-top: 1rem;
+  border-bottom: 0.05rem solid rgb(209, 206, 206);
+  display: flex;
+  flex-direction: row;
+  padding-left: 2rem;
+}
+.sg3 {
+  grid-row: 2;
+  border-right: 0.05rem solid rgb(209, 206, 206);
+  padding-top: 1rem;
+  padding-left: 2rem;
+  grid-column: 1;
+  display: flex;
+  flex-direction: row;
+}
+.sg4 {
+  grid-row: 2;
+  margin-top: 1rem;
+  padding-left: 2rem;
+  grid-column: 2;
+  display: flex;
+  flex-direction: row;
+}
+.grid3 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 10rem;
+}
+.dg1 {
+  display: flex;
+  flex-direction: row;
+
+  height: 4.5rem;
+}
+.dg2 {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+}
+.green {
+  width: 70%;
+  background-color: rgb(168, 232, 168);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 4.5rem;
+}
+.blue {
+  width: 70%;
+  background-color: rgb(134, 205, 249);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 4.5rem;
+}
+.container2 {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  justify-content: space-between;
+  height: 15rem;
+  margin: 2rem;
+}
+.c1 {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
