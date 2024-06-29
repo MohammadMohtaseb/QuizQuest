@@ -31,7 +31,7 @@ function short() {
     // Regex to ensure password is at least 6 characters, with at least one uppercase letter, one lowercase letter, and one number
     const regexp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/;
     a = regexp.test(pass.value);
-    document.getElementById("checkpass").innerHTML = a || pass.value.length === 0 ? "" : "Wrong format password";
+    document.getElementById("checkpass").innerHTML = a || pass.value.length === 0 ? "" : "Password must be at least 6 characters, one uppercase letter and one number";
     
     // Check if passwords match immediately after validating password format
     confirmpass();

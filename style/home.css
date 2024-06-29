@@ -1,4 +1,12 @@
 /*-----------------General-------------------*/
+
+.dark_mode {
+    --clr-dark: #ffffff;
+    --clr-white: #333333;
+    --clr-light: #262626;
+    --clr-neutral800: #f1f5f9;
+}
+
 *,
 ::before,
 ::after {
@@ -15,6 +23,7 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
+    background-color: var(--clr-white);
 }
 
 h2,
@@ -48,6 +57,7 @@ h6 {
 
 .brand {
     margin-left: 0%;
+    color: var(--clr-dark);
 }
 
 .brand:hover {
@@ -97,6 +107,10 @@ h2 {
     height: 100%;
 }
 
+.up {
+    color: var(--clr-dark);
+}
+
 .right img {
     width: 100%;
     height: auto;
@@ -113,7 +127,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: var(--clr-light);
     padding: 10px 20px;
     height: 15vh;
 }

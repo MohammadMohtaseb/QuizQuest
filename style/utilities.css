@@ -2,6 +2,7 @@
 
 :root {
     --clr-dark: #333333;
+    --clr-white: #ffffff;
     --clr-light: #f1f5f9;
     --clr-neutral200: #e5e5e5;
     --clr-neutral400: #a3a3a3;
@@ -9,12 +10,11 @@
     --clr-neutral800: #262626;
     --clr-gray500: #6b7280;
     --clr-main: #FCC822;
-    --clr-blue700: #1d4ed8;
-    --clr-red600: #dc2626;
-    --clr-orange600: #f59e0b;
+    --clr-yellow300: #fde047;
+    --clr-yellow500: #facc15;
+    --clr-yellow700: #eab308;
 
     /* main 	rgb(252, 200, 34) */
-    /* indigo 	rgb(79, 70, 229) */
 
     /* sizes */
     --size-xxs: 0.5rem;
@@ -33,6 +33,8 @@
     --size-9xl: 8rem;
     --size-10xl: 10rem;
 }
+
+
 
 * {
     margin: 0;
@@ -65,6 +67,30 @@ html {
                 0 0 120px -10px var(--clr-main) ;
     color: var(--clr-main);            
 }
+
+/* .theme_btn {
+    display: inline-block;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: -0.05em;
+    background-color: var(--clr-white);
+    color: var(--clr-dark);
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(60, 60, 60, 0.5), 
+                0 6px 6px rgba(70, 70, 70, 0.5), 
+                0 0 10px -10px var(--clr-dark) ;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.theme_btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(70, 70, 70, 0.25), 
+                0 10px 10px rgba(70, 70, 70, 0.25), 
+                0 0 120px -10px var(--clr-dark) ;
+    color: var(--clr-white);   
+    background-color: var(--clr-dark);
+} */
 
 .container {
     width: 100%;

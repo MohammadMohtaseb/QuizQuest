@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding-left: 6%;
     color: red;
-    font-size: smaller;
+    font-size: var(--size-xs);
 }
 
 .container {

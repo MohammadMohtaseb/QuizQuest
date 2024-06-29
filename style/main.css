@@ -63,6 +63,14 @@ h6 {
     width: 90%;
 }
 
+/*------------------------------------------main_description--------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------main_quizes--------------------------------------------*/
+
 .quest_selection {
     display: flex;
     justify-content: space-around;
@@ -87,20 +95,21 @@ h6 {
 }
 
 .quest_html:hover {
-    background-color: var(--clr-red600);
+    background-color: var(--clr-yellow300);
     color: var(--clr-light);
     transform: translateY(-6px);
     transform: translateX(-6px);
+    font-weight: bolder;
 }
 
 .quest_css:hover {
-    background-color: var(--clr-blue700);
+    background-color: var(--clr-yellow500);
     color: var(--clr-light);
     transform: translateY(-6px);
 }
 
 .quest_javascript:hover {
-    background-color: var(--clr-orange600);
+    background-color: var(--clr-yellow700);
     color: var(--clr-light);
     transform: translateY(-6px);
     transform: translateX(6px);
