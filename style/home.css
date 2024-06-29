@@ -1,0 +1,129 @@
+/*-----------------General-------------------*/
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h2,
+h6 {
+    font-family: "Roboto", sans-serif;
+    color: var(--clr-dark);
+    font-weight: 100;
+}
+
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.section {
+    margin-top: 3rem;
+}
+
+.main_clr {
+    color: var(--clr-main);
+}
+
+.remove_dot {
+    list-style-type: none;
+}
+
+/*------------------------------------------navbar--------------------------------------------*/
+
+.brand {
+    margin-left: 0%;
+}
+
+.nav_border {
+    border-bottom: 1px solid gray;
+    width: 90%;
+}
+
+.gray_text {
+    color: var(--clr-gray500) !important;
+}
+/*------------------------------------------hero_section--------------------------------------------*/
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+.hero_section {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    gap: 5wh;
+    margin-top: 2rem;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    gap: 4vh;
+}
+
+.right {
+    width: 30%;
+    height: 100%;
+}
+
+.right img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*-----------------------------------video_section-----------------------------------------------*/
+
+
+/*-----------------------------------footer_section-----------------------------------------------*/
+
+.footer_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    height: 15vh;
+}
+
+.footer_logo-link {
+    text-decoration: none;
+    color: var(--clr-dark);
+}
+
+.footer_logo-link:hover {
+    color: var(--clr-main);
+}
+
+.footer_logo-link span:hover {
+    color: var(--clr-dark);
+}
+
+.footer_feedback-link {
+    color: var(--clr-gray500);
+    text-decoration: none;
+}
+
+.footer_feedback-link:hover {
+    color: var(--clr-main);
+}
