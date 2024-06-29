@@ -24,6 +24,7 @@ function login() {
                     }));
 
                     // Redirect to dashboard page after setting sessionStorage
+                    alert(`Welcome ${userData.fullname}`)    
                     window.location.href = "main.html";
                 } else {
                     // Incorrect password
