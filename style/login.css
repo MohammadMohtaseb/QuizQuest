@@ -17,19 +17,25 @@ body {
     width: 500px;
 }
 
-.header h1 {
+.login_title {
     margin: 0;
     font-size: 2.5rem;
     font-weight: normal;
     letter-spacing: 0.1rem;
+    text-decoration: none;
+    color: var(--clr-dark);
 }
 
-.header .quiz {
-    color: black;
+.login_title:hover {
+    color: var(--clr-main) ;
 }
 
-.header .quest {
-    color: #f7b731;
+.login_title:hover .quest {
+    color: var(--clr-dark); 
+}
+
+.quest {
+    color: var(--clr-main) ;
 }
 
 .header p {

@@ -26,9 +26,9 @@
                         <li class="nav-item my-3">
                             <a class="nav-link active me-5 gray_text" aria-current="page" href="#video_sect">How it works?</a>
                         </li>
-                        <!-- <li class="nav-item me-3 my-3">
+                        <li class="nav-item me-3 my-3">
                             <a class="nav-link theme_btn" href="#">Dark Theme</a>
-                        </li> -->
+                        </li>
                         <li class="nav-item me-3 my-3">
                             <a class="nav-link btn" href="/login.html">Login</a>
                         </li>
@@ -59,28 +59,28 @@
                         <li>CSS Quiz</li>
                         <li>JavaScript Quiz</li>
                         <br>
-                        <li><a class="btn" href="/login.html">Try the quiz</a></li>
+                        <li><a id="try_quiz" class="btn">Try the quiz</a></li>
                     </ul>
                 </div>
                 <div class="down">
                     <h2>Why Quiz<span class="main_clr">Quest</span>?</h2>
                     <ul class="remove_dot">
                         <li>
-                            <p>
+                            <p class="home_paragraphs">
                                 Timed Quizzes: Each quiz comes with a time limit to simulate
                                 real-world testing conditions and enhance your time management
                                 skills.
                             </p>
                         </li>
                         <li>
-                            <p>
+                            <p class="home_paragraphs">
                                 Multiple Choice Format: Our quizzes feature a
                                 choose-from-selection format, making it easier for you to focus on
                                 the content and demonstrate your knowledge effectively.
                             </p>
                         </li>
                         <li>
-                            <p>
+                            <p class="home_paragraphs">
                                 Answer Review: At the end of each quiz, you have the option to
                                 view the correct answers, allowing you to learn from your mistakes
                                 and improve your understanding of the material.
@@ -90,14 +90,14 @@
                 </div>
             </div>
             <div class="right">
-                <img src="/media/image/QuizPicLight.png" alt="QuizQuest user test image">
+                <img src="/media/image/QuizPicLight.png" alt="QuizQuest user test image" data-dark-src="/media/image/QuizPicDark.jpg">
             </div>
         </div>
     </section>
 
     <section class="container section">
         <div class="video_section" id="video_sect">
-
+            <iframe id="vid" width="560" height="315"  frameborder="0"></iframe>
         </div>
     </section>
 
@@ -116,6 +116,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="/script/main.js"></script>
+    <script src="/script/home.js"></script>
 </body>
 </html>

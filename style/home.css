@@ -73,6 +73,10 @@ h6 {
     width: 90%;
 }
 
+.theme_btn {
+    color: var(--clr-dark);
+}
+
 .gray_text {
     color: var(--clr-neutral400) !important;
 }
@@ -116,10 +120,18 @@ h2 {
     height: auto;
 }
 
+.home_paragraphs {
+    color: var(--clr-dark);
+}
 
 
 /*-----------------------------------video_section-----------------------------------------------*/
 
+.video_section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
 
 /*-----------------------------------footer_section-----------------------------------------------*/
 
@@ -160,6 +172,7 @@ h2 {
 
 .footer_copyright {
     font-size: var(--size-xs);
+    color: var(--clr-dark);
 }
 
 /*-------------------------------Media query--------------------------------*/

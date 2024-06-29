@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6
     color: var(--clr-main);            
 }
 
-/* .theme_btn {
+.theme_btn {
     display: inline-block;
     font-weight: 300;
     text-decoration: none;
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6
                 0 0 120px -10px var(--clr-dark) ;
     color: var(--clr-white);   
     background-color: var(--clr-dark);
-} */
+}
 
 .container {
     width: 100%;
