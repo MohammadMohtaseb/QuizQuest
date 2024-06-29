@@ -50,13 +50,25 @@ h6 {
     margin-left: 0%;
 }
 
+.brand:hover {
+    color: var(--clr-main);
+}
+
+.brand:hover .main_clr {
+    color: var(--clr-dark); 
+}
+
 .nav_border {
     border-bottom: 1px solid gray;
     width: 90%;
 }
 
 .gray_text {
-    color: var(--clr-gray500) !important;
+    color: var(--clr-neutral400) !important;
+}
+
+.gray_text:hover {
+    color: var(--clr-main) !important;
 }
 /*------------------------------------------hero_section--------------------------------------------*/
 h2 {
@@ -66,7 +78,7 @@ h2 {
 .hero_section {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     margin: auto;
     gap: 5wh;
     margin-top: 2rem;
@@ -120,10 +132,90 @@ h2 {
 }
 
 .footer_feedback-link {
-    color: var(--clr-gray500);
+    color: var(--clr-neutral400);
     text-decoration: none;
 }
 
 .footer_feedback-link:hover {
     color: var(--clr-main);
+}
+
+.footer_logo-link:hover .main_clr {
+    color: var(--clr-dark);
+}
+
+.footer_copyright {
+    font-size: var(--size-xs);
+}
+
+/*-------------------------------Media query--------------------------------*/
+/* 2xl */
+@media (max-width: 1536px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+/* xl */
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+    h2 {
+        font-size: var(--size-xl);
+    }
+    .hero_section {
+        font-size: var(--size-xs);
+        width: 90%;
+    }
+    .btn {
+        font-size: var(--size-sm);
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+    .right img {
+        display: none;
+        width: 0;
+    }
+    .right {
+        width: 0;
+    }
+    .left {
+        width: 100%;
+    }
+    .footer_section {
+        font-size: var(--size-sm);
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .container {
+        max-width: 475px;
+    }
+    .footer_copyright {
+        font-size: var(--size-xxs);
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .container {
+        width: 100%;
+    }
+    .footer_section {
+        font-size: var(--size-xs);
+    }
+    
 }

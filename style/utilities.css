@@ -3,12 +3,15 @@
 :root {
     --clr-dark: #333333;
     --clr-light: #f1f5f9;
+    --clr-neutral200: #e5e5e5;
+    --clr-neutral400: #a3a3a3;
+    --clr-neutral600: #525252;
+    --clr-neutral800: #262626;
     --clr-gray500: #6b7280;
-    --clr-slate400: #94a3b8;
-    --clr-slate600: #475569;
-    --clr-slate800: #1e293b;
-    --clr-rose: #6FDCE3;
     --clr-main: #FCC822;
+    --clr-blue700: #1d4ed8;
+    --clr-red600: #dc2626;
+    --clr-orange600: #f59e0b;
 
     /* main 	rgb(252, 200, 34) */
     /* indigo 	rgb(79, 70, 229) */

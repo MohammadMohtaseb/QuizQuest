@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/style/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><span class="quiz">Quiz</span><span class="quest">Quest</span></h1>
+            
+            <p>Welcome <br><br> Create a new account</p>
+        </div>
+        <form>
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="name@digital.com" required="">
+                <p id="checkemail" class="vald-p"></p>
+            </div>
+            <div class="input-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="group3" required="">
+                <p id="checkname" class="vald-p"></p>
+            </div>
+            <div class="input-group">
+                <label for="password">New Password</label>
+                <input type="password" id="password" name="password" required="" placeholder="********">
+                <p id="checkpass" class="vald-p"></p>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required="" placeholder="********">
+                <p id="checkpass2" class="vald-p"></p>
+            </div>
+            
+            
+            <button id="signup" type="button">Signup</button>
+        </form>
+        <p class="login">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    
+    
+    <script src="/script/signup.js"></script>
+</body>
+</html>
