@@ -1,6 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
     const themeButton = document.querySelector('.theme_btn');
     const imgElement = document.querySelector('.right img');
+    const login = document.querySelector('#login_btn');
+    const signup = document.querySelector('#sign_up');
+    const logout = document.querySelector('#logout');
+
+
+
+    if (sessionStorage.getItem('currentUser')) {
+        login.style.display = "none";
+        signup.style.display = "none";
+        logout.style.display = "block";
+    } else {
+        login.style.display = "block";
+        signup.style.display = "block";
+    }
+
+
+    const log = document.getElementById("logout");
+    log.addEventListener("click", logoutt);
+
+    function logoutt() {
+        sessionStorage.clear();
+    }
 
     function toggleTheme() {
         document.body.classList.toggle('dark_mode');
@@ -33,7 +55,7 @@ const tryQuiz = document.getElementById("try_quiz");
 tryQuiz.addEventListener('click', checkIfSession);
 
 function checkIfSession() {
-    if (sessionStorage.getItem('userSession')) {
+    if (sessionStorage.getItem('currentUser')) {
         window.location.href = "main.html";
     } else {
         window.location.href = "login.html";
@@ -41,7 +63,7 @@ function checkIfSession() {
 }
 
 function searchVideos() {
-    const apiKey = 'AIzaSyB7kHou-qOA8IJ0yzAdIFSnCYfoGhnc_K8';
+    const apiKey = 'AIzaSyAn6PMksTdus8dF2i577GRPmujFYHPOiKs';
     const video = document.getElementById("vid");
     const query = "zaid";  // Replace with your desired search query
 

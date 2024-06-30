@@ -92,6 +92,9 @@ h6 {
     color: var(--clr-main);
     background-color: var(--clr-dark);
 }
+#logout {
+    display: none;
+}
 
 .gray_text {
     color: var(--clr-neutral400) !important;

@@ -65,6 +65,12 @@ h6 {
     width: 90%;
 }
 
+.user_name {
+    color: var(--clr-main);
+    text-decoration: none;
+    
+}
+
 /*------------------------------------------main_description--------------------------------------------*/
 
 

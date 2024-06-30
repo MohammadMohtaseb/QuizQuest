@@ -11,9 +11,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding-top: 6rem;
+    padding-top: 3rem;
 }
 
 /*------------------------------------------navbar--------------------------------------------*/
@@ -26,6 +26,11 @@ h1, h2, h3, h4, h5, h6 {
 .brand {
     margin-left: 0%;
     color: var(--clr-dark);
+}
+
+.user_name {
+    text-decoration: none;
+    color: var(--clr-main);
 }
 
 .brand:hover {
@@ -72,13 +77,13 @@ main {
 .step {
     width: 40px;
     height: 40px;
-    background-color: var(--clr-gray300);
+    background-color: var(--clr-gray500);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    color: var(--clr-white);
+    color: white;
 }
 
 .step.active {
@@ -90,11 +95,15 @@ main {
     font-size: 32px;
     margin-bottom: 32px;
     text-align: center;
+    color: var(--clr-white);
     background: var(--clr-main);
     height: 15vh;
     justify-content: center;
     align-items: center;
     border-radius: 6px;
+}
+#question-text{
+    color: var(--clr-white);
 }
 
 .options {
@@ -106,8 +115,8 @@ main {
 }
 
 .option {
-    background-color: var(--clr-gray300);
-    color: var(--clr-white);
+    background-color: var(--clr-gray500);
+    color: white;
     border: none;
     padding: 10px 20px;
     font-size: 18px;
@@ -116,9 +125,22 @@ main {
     flex: 1;
     margin: 0 10px;
     transition: background-color 0.3s;
-    height: 8vh;
+    height: 20vh;
+    
 }
 
+.option:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-dark);
+    box-shadow: 0 14px 28px rgba(234, 192, 51, 0.25), 
+                0 10px 10px rgba(234, 192, 51, 0.25), 
+                0 0 10px -10px var(--clr-main) ;
+}
+
+.option.active {
+    background-color: var(--clr-main);
+    color: var(--clr-white); /* Adjust as needed for contrast */
+}
 .option.selected {
     background-color: var(--clr-main);
     color: #fff;
@@ -140,11 +162,12 @@ main {
     font-weight: bold;
     text-align: center;
     margin-bottom: 1rem;
+    color: var(--clr-dark);
 }
 
 .finish {
     background-color: var(--clr-main);
-    color: var(--clr-dark);
+    color: var(--clr-white);
     border: none;
     padding: 10px 20px;
     font-size: 18px;
@@ -154,8 +177,14 @@ main {
 }
 
 .finish:hover {
-    background-color: var(--clr-main);
+    background-color: var(--clr-white);
+    color: var(--clr-main);
+    box-shadow: 0 14px 28px rgba(234, 192, 51, 0.25), 
+                0 10px 10px rgba(234, 192, 51, 0.25), 
+                0 0 10px -10px var(--clr-main) ;
 }
+
+
 
 /* Overlay Styles */
 .overlay {
@@ -169,22 +198,7 @@ main {
     z-index: 10;
 }
 
-.result-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    background-color: black;
-    z-index: -1; /* Initially behind the quiz */
-}
+
 
 .result {
     width: 100%;
@@ -197,12 +211,14 @@ main {
     color: #fff;
     font-size: 24px;
     font-weight: bold;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow for the circle */
+   
 }
 
 .showA, .showB {
     background-color: transparent;
     color: #fff;
+    width: 200px;
+    height: fit-content;
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-right: 1rem;
@@ -217,11 +233,24 @@ main {
 .Score {
     font-size: 5rem;
 }
-
-.showB {
-    margin-left: 1rem;
+.showA:hover{
+    background-color: white;
+    color: red;
+}
+.showB:hover{
+    background-color: white;
+    color: red;
 }
 
+
+
+.result-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10%;
+    width: 100%;
+}
 /* -----------------------------------------------------result section----------------------------------------------------------------------- */
 
 /* Center the timer */
@@ -246,7 +275,7 @@ main {
 
 .result-container {
     position: fixed;
-    top: 50%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -254,9 +283,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    /* border-radius: 50%; */
+    width: 500px;
+    height: 500px;
     background-color: black;
     z-index: -1; /* Initially behind the quiz */
 }
@@ -267,7 +296,7 @@ main {
     font-weight: bold;
 }
 
-.showA {
+/* .showA {
     background-color: transparent;
     color: #fff;
     font-size: 1.5rem;
@@ -276,7 +305,7 @@ main {
     border-radius: 1rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
-}
+} */
 
 .score_text {
     font-size: 1.5rem;

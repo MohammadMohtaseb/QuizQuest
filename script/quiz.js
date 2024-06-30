@@ -2,8 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let questions = [];
     let currentQuestionIndex = 0;
     let score = 0;
+    let selectedAnswer = null;
     const timerElement = document.getElementById('timer');
     let timer;
+    let userAnswers = [];
 
     const log = document.getElementById("logout");
     log.addEventListener("click", logout);
@@ -26,15 +28,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to start the timer
     function startTimer(duration) {
         let time = duration;
-        timerElement.textContent = time;
+        timerElement.textContent = formatTime(time);
         timer = setInterval(() => {
             time--;
-            timerElement.textContent = time;
+            timerElement.textContent = formatTime(time);
             if (time <= 0) {
                 clearInterval(timer);
                 endQuiz();
             }
         }, 1000);
+    }
+
+    function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+        return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
     }
 
     // Function to fetch quiz questions
@@ -50,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 questions = data[quizType];
                 currentQuestionIndex = 0;
                 loadQuestion(currentQuestionIndex);
-                startTimer(60); // Start timer for 60 seconds
+                startTimer(300); // Start timer for 60 seconds
             })
             .catch(error => console.error('Error fetching quiz data:', error));
     }
@@ -68,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 button.type = 'button';
                 button.className = 'option';
                 button.textContent = option;
-                button.addEventListener('click', () => selectOption(option, question.correctAnswer));
+                button.addEventListener('click', () => selectOption(button, option));
                 optionsContainer.appendChild(button);
             });
 
@@ -79,30 +87,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Function to handle option selection
-    function selectOption(selected, correct) {
-        if (selected === correct) {
-            score++;
-        }
-        currentQuestionIndex++;
-        if (currentQuestionIndex < questions.length) {
-            loadQuestion(currentQuestionIndex);
-        } else {
-            endQuiz();
-        }
+    function selectOption(button, option) {
+        const options = document.querySelectorAll('.option');
+        options.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        selectedAnswer = option;
     }
 
     // Function to update the progress bar
     function updateProgressBar(index) {
         const steps = document.querySelectorAll('.step');
         steps.forEach((step, i) => {
-            if (i <= index) {
+            if (i <= index % 5) {
                 step.classList.add('active');
             } else {
                 step.classList.remove('active');
             }
         });
 
-        // Update step text content for the second half of questions
+        // Update step text content
         if (index >= 5) {
             steps.forEach((step, i) => {
                 step.textContent = (i + 6).toString();
@@ -120,19 +123,21 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.question').innerHTML = '<h2>Quiz Completed!</h2>';
         document.querySelector('.options').innerHTML = `<p>Your score: ${score}</p>`;
         
+        // Store user's answers and score in session storage
+        sessionStorage.setItem('userAnswers', JSON.stringify(userAnswers));
+        sessionStorage.setItem('quizScore', score);
+        
         // Show the result container
-        const overlay = document.getElementById('overlay');
         const resultContainer = document.getElementById('result-container');
         const passOrFail = document.getElementById('pass-or-fail');
         const scoreDisplay = resultContainer.querySelector('.Score');
         
-        overlay.style.display = 'block';
         resultContainer.style.zIndex = 11; // Bring result container to the front
         resultContainer.style.display = 'flex'; // Make result container visible
 
         scoreDisplay.textContent = `${score} / ${questions.length}`;
         
-        if (score >= Math.ceil(0.7 * questions.length)) { // Assuming 70% of total questions
+        if (score >= Math.ceil(0.5 * questions.length)) { // Assuming 50% of total questions
             resultContainer.style.backgroundColor = 'green';
             passOrFail.textContent = 'Passed';
         } else {
@@ -159,12 +164,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event listener for the "Next" button
     document.getElementById('next-question-btn').addEventListener('click', () => {
-        currentQuestionIndex++;
-        if (currentQuestionIndex < questions.length - 1) {
-            loadQuestion(currentQuestionIndex);
+        if (selectedAnswer !== null) {
+            const correctAnswer = questions[currentQuestionIndex].correctAnswer;
+            if (selectedAnswer === correctAnswer) {
+                score++;
+            }
+            // Store user's answer
+            userAnswers.push({
+                question: questions[currentQuestionIndex].question,
+                userAnswer: selectedAnswer,
+                correctAnswer: correctAnswer
+            });
+            selectedAnswer = null;
+            currentQuestionIndex++;
+            if (currentQuestionIndex < questions.length - 1) {
+                loadQuestion(currentQuestionIndex);
+            } else {
+                document.getElementById('next-question-btn').textContent = 'Submit';
+                loadQuestion(currentQuestionIndex);
+            }
         } else {
-            document.getElementById('next-question-btn').textContent = 'Submit';
-            loadQuestion(currentQuestionIndex);
+            alert('Please select an answer before proceeding.');
         }
     });
 
