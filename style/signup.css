@@ -5,24 +5,28 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f8f8f8;
+    background-color: var(--clr-white);
 }
 .vald-p{
     display: flex;
     align-items: start;
     margin: 0;
     padding-left: 6%;
-    color: red;
+    color: var(--clr-red600);
     font-size: var(--size-xs);
 }
 
 .container {
     text-align: center;
-    background-color: #fff;
+    background-color: var(--clr-white);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 500px;
+}
+
+.signup_title_tag {
+    text-decoration: none;
 }
 
 .header h1 {
@@ -33,16 +37,16 @@ body {
 }
 
 .header .quiz {
-    color: black;
+    color: var(--clr-dark);
 }
 
 .header .quest {
-    color: #f7b731;
+    color: var(--clr-main);
 }
 
 .header p {
     margin-top: 30px;
-    color: #666;
+    color: var(--clr-dark);
 }
 
 form {
@@ -60,7 +64,7 @@ form {
     display: block;
     margin-bottom: 5px;
     font-size: 1rem;
-    color: #666;
+    color: var(--clr-dark);
     text-align: left;
     padding-left: 6%;
 
@@ -69,18 +73,20 @@ form {
 .input-group input {
     width: 90%;
     padding: 10px;
+    background-color: var(--clr-white);
+    color: var(--clr-dark);
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     height: 50px;
 }
 input::placeholder{
-    color: #f7b731;
+    color: var(--clr-main);
 }
 
 button {
-    background-color: #f7b731;
-    color: white;
+    background-color: var(--clr-main);
+    color: var(--clr-dark);
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -90,17 +96,17 @@ button {
 }
 
 button:hover {
-    background-color: #e0a800;
+    background-color: var(--clr-main);
 }
 
 .login {
     margin-top: 20px;
     font-size: 12px;
-    color: #d0cdcd;
+    color: var(--clr-gray300);
 }
 
 .login a {
-    color: #f7b731;
+    color: var(--clr-main);
     text-decoration: none;
     font-size: 0.9rem;
 }

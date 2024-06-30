@@ -1,0 +1,37 @@
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.result {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.retry, .choose-topic {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: var(--clr-main);
+    border: none;
+    border-radius: 5px;
+    color: var(--clr-white);
+    font-size: 16px;
+}

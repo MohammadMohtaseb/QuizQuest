@@ -1,6 +1,8 @@
 /* --------------------------------------------------colors and sizes------------------------------------------------------- */
 
 :root {
+
+    /* Colors */
     --clr-dark: #333333;
     --clr-white: #ffffff;
     --clr-light: #f1f5f9;
@@ -9,14 +11,16 @@
     --clr-neutral600: #525252;
     --clr-neutral800: #262626;
     --clr-gray500: #6b7280;
+    --clr-gray300: #d1d5db;
     --clr-main: #FCC822;
     --clr-yellow300: #fde047;
     --clr-yellow500: #facc15;
     --clr-yellow700: #eab308;
+    --clr-red600: #f43f5e;
 
     /* main 	rgb(252, 200, 34) */
 
-    /* sizes */
+    /* Sizes */
     --size-xxs: 0.5rem;
     --size-xs: 0.75rem;
     --size-sm: 0.875rem;
@@ -34,7 +38,51 @@
     --size-10xl: 10rem;
 }
 
+/*-----------------------------------Dark theme--------------------------------------------*/
 
+.dark_mode {
+    --clr-dark: #ffffff;
+    --clr-white: #333333;
+    --clr-light: #262626;
+    --clr-neutral800: #f1f5f9;
+}
+
+.dark_mode .theme_btn {
+    color: var(--clr-dark);
+    background-color: var(--clr-white);
+}
+
+.dark_mode .theme_btn:hover {
+    color: var(--clr-white) !important;
+    background-color: var(--clr-dark) !important;
+}
+
+/* Dark mode styles for offcanvas menu */
+.dark_mode .offcanvas {
+    background-color: var(--clr-white) !important;
+    color: var(--clr-dark) !important;
+}
+
+.dark_mode .offcanvas-header, .dark_mode .offcanvas-body {
+    background-color: var(--clr-white) !important;
+    color: var(--clr-dark) !important;
+}
+
+.dark_mode .offcanvas .nav-link {
+    color: var(--clr-dark) !important;
+    background-color: var(--clr-main);
+    border: none;
+}
+
+.dark_mode .offcanvas .nav-link:hover {
+    color: var(--clr-main) !important;
+    background-color: var(--clr-dark);
+}
+
+.dark_mode .offcanvas .btn-close {
+    filter: invert(1); /* To make the close button visible in dark mode */
+}
+/*-------------------------------------General Styles-----------------------------------------*/
 
 * {
     margin: 0;
@@ -51,6 +99,21 @@ h1, h2, h3, h4, h5, h6
     color: var(--clr-dark);
     font-weight: 100;
 }
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    /* border: 1px solid red; */
+}
+
+.section {
+    margin-top: 5rem;
+}
+
+/*----------------------------------------Buttons Styles---------------------------------------*/
 
 .btn {
     display: inline-block;
@@ -82,6 +145,7 @@ h1, h2, h3, h4, h5, h6
     letter-spacing: -0.05em;
     background-color: var(--clr-white);
     color: var(--clr-dark);
+    transition: color 0.3s, background-color 0.3s;
     padding: 0.5em 1em;
     border-radius: 6px;
     box-shadow: 0 10px 20px rgba(60, 60, 60, 0.5), 
@@ -97,19 +161,6 @@ h1, h2, h3, h4, h5, h6
                 0 0 120px -10px var(--clr-dark) ;
     color: var(--clr-white);   
     background-color: var(--clr-dark);
-}
-
-.container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    /* border: 1px solid red; */
-}
-
-.section {
-    margin-top: 5rem;
 }
 
 /* ----------------------------------------media queries section------------------------------------------------------------- */

@@ -7,6 +7,16 @@
     --clr-neutral800: #f1f5f9;
 }
 
+.dark_mode .theme_btn {
+    color: var(--clr-dark);
+    background-color: var(--clr-white);
+}
+
+.dark_mode .theme_btn:hover {
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+}
+
 *,
 ::before,
 ::after {
@@ -75,15 +85,37 @@ h6 {
 
 .theme_btn {
     color: var(--clr-dark);
+    background-color: var(--clr-main);
+}
+
+.theme_btn:hover {
+    color: var(--clr-main);
+    background-color: var(--clr-dark);
 }
 
 .gray_text {
     color: var(--clr-neutral400) !important;
+    text-decoration: none;
+    padding-top: 0.5rem;
+    text-align: center;
+    display: inline-block;
 }
 
 .gray_text:hover {
     color: var(--clr-main) !important;
 }
+
+.nav-link.btn {
+    color: var(--clr-white);
+    background-color: var(--clr-main);
+    border: none;
+}
+
+.nav-link.btn:hover {
+    color: var(--clr-main);
+    background-color: var(--clr-dark);
+}
+
 /*------------------------------------------hero_section--------------------------------------------*/
 h2 {
     margin-bottom: 1.5rem;

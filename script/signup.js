@@ -81,3 +81,8 @@ function signup(event) {
         alert("Please correct the errors before signing up.");
     }
 }
+
+// Check for dark mode preference and apply it
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark_mode');
+}

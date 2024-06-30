@@ -5,12 +5,12 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f8f8f8;
+    background-color: var(--clr-white);
 }
 
 .container {
     text-align: center;
-    background-color: #fff;
+    background-color: var(--clr-white);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -31,7 +31,7 @@ body {
 }
 
 .login_title:hover .quest {
-    color: var(--clr-dark); 
+    color: var(--clr-white); 
 }
 
 .quest {
@@ -40,7 +40,7 @@ body {
 
 .header p {
     margin-top: 30px;
-    color: #666;
+    color: var(--clr-dark);
 }
 
 form {
@@ -58,7 +58,7 @@ form {
     display: block;
     margin-bottom: 5px;
     font-size: 12px;
-    color: #666;
+    color: var(--clr-dark);
     text-align: left;
     padding-left: 6%;
 }
@@ -66,18 +66,31 @@ form {
 .input-group input {
     width: 90%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--clr-dark);
+    background-color: var(--clr-white);
+    color: var(--clr-dark);
     border-radius: 4px;
     box-sizing: border-box;
     height: 60px;
 }
-input::placeholder{
-    color: #f7b731;
+
+.input-group input::placeholder {
+    color: var(--clr-dark);
+}
+
+/* Autofill styles */
+input:-webkit-autofill {
+    background-color: var(--clr-white) !important;
+    color: var(--clr-dark) !important;
+    border: 1px solid var(--clr-dark) !important;
+    -webkit-box-shadow: 0 0 0px 1000px var(--clr-white) inset !important;
+    -webkit-text-fill-color: var(--clr-dark) !important;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 button {
-    background-color: #f7b731;
-    color: white;
+    background-color: var(--clr-main);
+    color: var(--clr-dark);
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -87,17 +100,17 @@ button {
 }
 
 button:hover {
-    background-color: #e0a800;
+    background-color: var(--clr-main);
 }
 
 .login {
     margin-top: 20px;
     font-size: 12px;
-    color: #d0cdcd;
+    color: var(--clr-gray300);
 }
 
 .login a {
-    color: #f7b731;
+    color: var(--clr-main);
     text-decoration: none;
     font-size: 0.9rem;
 }

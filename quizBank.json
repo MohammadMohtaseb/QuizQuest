@@ -1,0 +1,158 @@
+{
+    "html": [
+        {
+            "question": "What does HTML stand for?",
+            "options": ["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Hyper Tool Markup Language"],
+            "correctAnswer": "Hyper Text Markup Language"
+        },
+        {
+            "question": "Which HTML element is used to define the title of a document?",
+            "options": ["<title>", "<head>", "<meta>", "<header>"],
+            "correctAnswer": "<title>"
+        },
+        {
+            "question": "Which HTML attribute is used to define inline styles?",
+            "options": ["class", "style", "font", "styles"],
+            "correctAnswer": "style"
+        },
+        {
+            "question": "Which HTML element is used to define important text?",
+            "options": ["<strong>", "<b>", "<important>", "<i>"],
+            "correctAnswer": "<strong>"
+        },
+        {
+            "question": "Which HTML element is used to define emphasized text?",
+            "options": ["<i>", "<em>", "<italic>", "<e>"],
+            "correctAnswer": "<em>"
+        },
+        {
+            "question": "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?",
+            "options": ["title", "src", "alt", "longdesc"],
+            "correctAnswer": "alt"
+        },
+        {
+            "question": "Which HTML element is used to define a table row?",
+            "options": ["<td>", "<tr>", "<th>", "<table>"],
+            "correctAnswer": "<tr>"
+        },
+        {
+            "question": "Which HTML attribute is used to define the character encoding of a document?",
+            "options": ["lang", "meta", "charset", "encoding"],
+            "correctAnswer": "charset"
+        },
+        {
+            "question": "Which HTML element is used to define a footer for a document or section?",
+            "options": ["<footer>", "<bottom>", "<section>", "<foot>"],
+            "correctAnswer": "<footer>"
+        },
+        {
+            "question": "Which HTML element is used to define a navigation link?",
+            "options": ["<nav>", "<a>", "<link>", "<href>"],
+            "correctAnswer": "<a>"
+        }
+    ],
+    "css": [
+        {
+            "question": "What does CSS stand for?",
+            "options": ["Creative Style Sheets", "Cascading Style Sheets", "Colorful Style Sheets", "Computer Style Sheets"],
+            "correctAnswer": "Cascading Style Sheets"
+        },
+        {
+            "question": "Which CSS property is used to change the background color?",
+            "options": ["bgcolor", "color", "background-color", "background"],
+            "correctAnswer": "background-color"
+        },
+        {
+            "question": "Which CSS property is used to change the text color of an element?",
+            "options": ["fgcolor", "color", "text-color", "font-color"],
+            "correctAnswer": "color"
+        },
+        {
+            "question": "Which CSS property controls the text size?",
+            "options": ["font-style", "text-size", "font-size", "text-style"],
+            "correctAnswer": "font-size"
+        },
+        {
+            "question": "Which CSS property is used to change the font of an element?",
+            "options": ["font-weight", "font-family", "font-style", "font"],
+            "correctAnswer": "font-family"
+        },
+        {
+            "question": "Which CSS property is used to specify the space between the lines of text?",
+            "options": ["spacing", "line-height", "line-spacing", "text-spacing"],
+            "correctAnswer": "line-height"
+        },
+        {
+            "question": "Which CSS property is used to make the text bold?",
+            "options": ["font-weight", "font-style", "font-family", "bold"],
+            "correctAnswer": "font-weight"
+        },
+        {
+            "question": "Which CSS property is used to align text horizontally?",
+            "options": ["vertical-align", "text-align", "align", "horizontal-align"],
+            "correctAnswer": "text-align"
+        },
+        {
+            "question": "Which CSS property is used to specify the area between the content and the border?",
+            "options": ["margin", "padding", "border", "spacing"],
+            "correctAnswer": "padding"
+        },
+        {
+            "question": "Which CSS property is used to specify the area outside the border?",
+            "options": ["margin", "padding", "border", "spacing"],
+            "correctAnswer": "margin"
+        }
+    ],
+    "javascript": [
+        {
+            "question": "What is the correct syntax for referring to an external script called 'xxx.js'?",
+            "options": ["<script href='xxx.js'>", "<script name='xxx.js'>", "<script src='xxx.js'>", "<script file='xxx.js'>"],
+            "correctAnswer": "<script src='xxx.js'>"
+        },
+        {
+            "question": "How do you write 'Hello World' in an alert box?",
+            "options": ["alertBox('Hello World');", "msg('Hello World');", "alert('Hello World');", "msgBox('Hello World');"],
+            "correctAnswer": "alert('Hello World');"
+        },
+        {
+            "question": "How do you create a function in JavaScript?",
+            "options": ["function = myFunction()", "function:myFunction()", "function myFunction()", "createFunction myFunction()"],
+            "correctAnswer": "function myFunction()"
+        },
+        {
+            "question": "How do you call a function named 'myFunction'?",
+            "options": ["call myFunction()", "call function myFunction()", "myFunction()", "execute myFunction()"],
+            "correctAnswer": "myFunction()"
+        },
+        {
+            "question": "How do you write an IF statement in JavaScript?",
+            "options": ["if i = 5 then", "if i == 5 then", "if (i == 5)", "if (i = 5)"],
+            "correctAnswer": "if (i == 5)"
+        },
+        {
+            "question": "How does a WHILE loop start?",
+            "options": ["while i = 1 to 10", "while (i <= 10)", "while (i <= 10; i++)", "while (i++ <= 10)"],
+            "correctAnswer": "while (i <= 10)"
+        },
+        {
+            "question": "How can you add a comment in JavaScript?",
+            "options": ["<!-- This is a comment -->", "// This is a comment", "' This is a comment", "/* This is a comment */"],
+            "correctAnswer": "// This is a comment"
+        },
+        {
+            "question": "How do you declare a JavaScript variable?",
+            "options": ["variable carName;", "var carName;", "v carName;", "declare carName;"],
+            "correctAnswer": "var carName;"
+        },
+        {
+            "question": "Which event occurs when the user clicks on an HTML element?",
+            "options": ["onchange", "onmouseclick", "onclick", "onmouseover"],
+            "correctAnswer": "onclick"
+        },
+        {
+            "question": "How do you find the number with the highest value of x and y?",
+            "options": ["Math.ceil(x, y)", "Math.max(x, y)", "ceil(x, y)", "top(x, y)"],
+            "correctAnswer": "Math.max(x, y)"
+        }
+    ]
+}
