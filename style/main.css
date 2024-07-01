@@ -28,6 +28,10 @@ h6 {
     font-weight: 100;
 }
 
+h1 {
+    color: var(--clr-dark2);
+}
+
 .container {
     max-width: 1536px;
     margin-left: auto;
@@ -107,21 +111,20 @@ h6 {
 }
 
 .quest_html:hover {
-    background-color: var(--clr-yellow300);
+    background-color: var(--clr-main);
     color: var(--clr-light);
     transform: translateY(-6px);
     transform: translateX(-6px);
-    font-weight: bolder;
 }
 
 .quest_css:hover {
-    background-color: var(--clr-yellow500);
+    background-color: var(--clr-main);
     color: var(--clr-light);
     transform: translateY(-6px);
 }
 
 .quest_javascript:hover {
-    background-color: var(--clr-yellow700);
+    background-color: var(--clr-main);
     color: var(--clr-light);
     transform: translateY(-6px);
     transform: translateX(6px);

@@ -18,6 +18,7 @@
     --clr-yellow500: #facc15;
     --clr-yellow700: #eab308;
     --clr-red600: #f43f5e;
+    --clr-dark2: #333331;
 
     /* main 	rgb(252, 200, 34) */
 
@@ -47,6 +48,7 @@
     --clr-light: #262626;
     --clr-neutral800: #f1f5f9;
     --clr-mainSwitch: #FCC822;
+    --clr-dark2: #FCC822;
 }
 
 .dark_mode .theme_btn {

@@ -134,6 +134,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const scoreDisplay = resultContainer.querySelector('.Score');
         const showA = document.querySelector(".showA");
         const showB = document.querySelector(".showB");
+        document.getElementById("logout").style.display="none";
+        document.getElementById("user_name").style.display="none";
+        document.getElementById("next-question-btn").style.display="none";
         
         resultContainer.style.zIndex = 2; // Bring result container to the front
         resultContainer.style.display = 'flex'; // Make result container visible
