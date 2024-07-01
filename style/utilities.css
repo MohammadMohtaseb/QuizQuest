@@ -13,6 +13,7 @@
     --clr-gray500: #6b7280;
     --clr-gray300: #d1d5db;
     --clr-main: #FCC822;
+    --clr-mainSwitch: #191401;
     --clr-yellow300: #fde047;
     --clr-yellow500: #facc15;
     --clr-yellow700: #eab308;
@@ -45,6 +46,7 @@
     --clr-white: #333333;
     --clr-light: #262626;
     --clr-neutral800: #f1f5f9;
+    --clr-mainSwitch: #FCC822;
 }
 
 .dark_mode .theme_btn {
@@ -117,6 +119,7 @@ h1, h2, h3, h4, h5, h6
 
 .btn {
     display: inline-block;
+    width: fit-content;
     font-weight: 300;
     text-decoration: none;
     letter-spacing: -0.05em;
@@ -135,7 +138,7 @@ h1, h2, h3, h4, h5, h6
     box-shadow: 0 14px 28px rgba(234, 192, 51, 0.25), 
                 0 10px 10px rgba(234, 192, 51, 0.25), 
                 0 0 10px -10px var(--clr-main) ;
-    color: var(--clr-main);            
+    color: var(--clr-mainSwitch);            
 }
 
 .theme_btn {

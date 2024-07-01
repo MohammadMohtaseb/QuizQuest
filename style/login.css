@@ -31,7 +31,7 @@ body {
 }
 
 .login_title:hover .quest {
-    color: var(--clr-white); 
+    color: var(--clr-dark); 
 }
 
 .quest {
@@ -68,23 +68,23 @@ form {
     padding: 10px;
     border: 1px solid var(--clr-dark);
     background-color: var(--clr-white);
-    color: var(--clr-dark);
+    color: var(--clr-mainSwitch);
     border-radius: 4px;
     box-sizing: border-box;
     height: 60px;
 }
 
 .input-group input::placeholder {
-    color: var(--clr-dark);
+    color: var(--clr-mainSwitch);
 }
 
 /* Autofill styles */
 input:-webkit-autofill {
     background-color: var(--clr-white) !important;
-    color: var(--clr-dark) !important;
+    color: var(--clr-mainSwitch) !important;
     border: 1px solid var(--clr-dark) !important;
     -webkit-box-shadow: 0 0 0px 1000px var(--clr-white) inset !important;
-    -webkit-text-fill-color: var(--clr-dark) !important;
+    -webkit-text-fill-color: var(--clr-mainSwitch) !important;
     transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -97,24 +97,33 @@ button {
     cursor: pointer;
     width: 20%;
     font-size: 20px;
+    box-shadow: 0 4px 5px rgba(252, 200, 34, 0.5), 
+                0 3px 3px rgba(234, 192, 51, 0.5), 
+                0 0 10px -10px var(--clr-main) ;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 button:hover {
-    background-color: var(--clr-main);
+    background-color: var(--clr-white);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(234, 192, 51, 0.25), 
+                0 10px 10px rgba(234, 192, 51, 0.25), 
+                0 0 10px -10px var(--clr-main) ;
+    color: var(--clr-main);      
 }
 
-.login {
+.signup_link {
     margin-top: 20px;
     font-size: 12px;
     color: var(--clr-gray300);
 }
 
-.login a {
+.signup_link a {
     color: var(--clr-main);
     text-decoration: none;
     font-size: 0.9rem;
 }
 
-.login a:hover {
+.signup_link a:hover {
     text-decoration: underline;
 }

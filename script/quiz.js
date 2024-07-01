@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let questions = [];
-    let currentQuestionIndex = 0;
-    let score = 0;
-    let selectedAnswer = null;
-    const timerElement = document.getElementById('timer');
-    let timer;
-    let userAnswers = [];
-
+    // Checking if user is in session, if not 
+    if (sessionStorage.getItem('currentUser')) {
+        const userfName = document.getElementById("user_name");
+        const currentUserData = JSON.parse(sessionStorage.getItem('currentUser'));
+        userfName.textContent = currentUserData.fullname;
+    } else {
+        window.location.href = "login.html";
+    }
+    // Logout functionality
     const log = document.getElementById("logout");
     log.addEventListener("click", logout);
 
@@ -15,15 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = "home.html";
     }
 
-    const userfName = document.getElementById("user_name");
-
-    if (sessionStorage.getItem('currentUser')) {
-        const currentUserData = JSON.parse(sessionStorage.getItem('currentUser'));
-        const name = currentUserData.fullname;
-        userfName.textContent = name;
-    } else {
-        userfName.textContent = "Guest";
-    }
+    // Quiz functionality starts
+    let questions = [];
+    let currentQuestionIndex = 0;
+    let score = 0;
+    let selectedAnswer = null;
+    const timerElement = document.getElementById('timer');
+    let timer;
+    let userAnswers = [];
 
     // Function to start the timer
     function startTimer(duration) {
@@ -131,6 +131,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const resultContainer = document.getElementById('result-container');
         const passOrFail = document.getElementById('pass-or-fail');
         const scoreDisplay = resultContainer.querySelector('.Score');
+        const showA = document.querySelector(".showA");
+        const showB = document.querySelector(".showB");
         
         resultContainer.style.zIndex = 11; // Bring result container to the front
         resultContainer.style.display = 'flex'; // Make result container visible
@@ -139,6 +141,10 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (score >= Math.ceil(0.5 * questions.length)) { // Assuming 50% of total questions
             resultContainer.style.backgroundColor = 'green';
+            showA.classList.remove('showA');
+            showA.classList.add('showAPass');
+            showB.classList.remove('showB');
+            showB.classList.add('showBPass');
             passOrFail.textContent = 'Passed';
         } else {
             resultContainer.style.backgroundColor = 'red';
@@ -188,19 +194,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Session validation and dark theme toggle
-    function validateSession() {
-        if (!sessionStorage.getItem('currentUser')) {
-            window.location.href = "login.html";
-        }
-    }
 
+    // Dark theme function
     function applyDarkTheme() {
         if (localStorage.getItem('theme') === 'dark') {
             document.body.classList.add('dark_mode');
         }
     }
 
-    validateSession();
     applyDarkTheme();
 });

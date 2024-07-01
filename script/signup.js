@@ -17,8 +17,8 @@ fullname.addEventListener("input", name);
 // Function to validate the fullname field
 function name() {
     // Regex to ensure fullname is at least two words, each with at least two letters, and no numbers
-    const regexp = /^(?!.*\d)(?=.*\b\w{2,}\b.*\b\w{2,}\b)[A-Za-z ]{4,}$/;
-    const isValid = regexp.test(fullname.value);
+    const regexN = /^(?!.*\d)(?=.*\b\w{2,}\b.*\b\w{2,}\b)[A-Za-z ]{4,}$/;
+    const isValid = regexN.test(fullname.value);
     const errorMessage = "Name should be at least two words, each with at least two letters, and have no numbers";
     
     // Set validation status and update error message
@@ -29,8 +29,8 @@ function name() {
 // Function to validate the password field
 function short() {
     // Regex to ensure password is at least 6 characters, with at least one uppercase letter, one lowercase letter, and one number
-    const regexp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/;
-    a = regexp.test(pass.value);
+    const regexP = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/;
+    a = regexP.test(pass.value);
     document.getElementById("checkpass").innerHTML = a || pass.value.length === 0 ? "" : "Password must be at least 6 characters, one uppercase letter and one number";
     
     // Check if passwords match immediately after validating password format
@@ -46,9 +46,9 @@ function confirmpass() {
 // Function to validate the email field
 function email() {
     // Regex to ensure valid email format
-    const regexe = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    c = regexe.test(emailField.value);
-    document.getElementById("checkemail").innerHTML = c || emailField.value.length === 0 ? "" : "Wrong format email";
+    const regexE = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    c = regexE.test(emailField.value);
+    document.getElementById("checkemail").innerHTML = c || emailField.value.length === 0 ? "" : "Wrong Email format";
 }
 
 // Add event listener to the signup button for form submission

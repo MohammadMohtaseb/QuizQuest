@@ -214,6 +214,10 @@ main {
    
 }
 
+.Score {
+    font-size: 5rem;
+}
+
 .showA, .showB {
     background-color: transparent;
     color: #fff;
@@ -230,9 +234,6 @@ main {
     display: inline-block;
 }
 
-.Score {
-    font-size: 5rem;
-}
 .showA:hover{
     background-color: white;
     color: red;
@@ -242,7 +243,31 @@ main {
     color: red;
 }
 
+.showAPass, .showBPass {
+    background-color: transparent;
+    color: #fff;
+    width: 200px;
+    height: fit-content;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
 
+.showAPass:hover {
+    background-color: white;
+    color: green;
+}
+
+.showBPass:hover {
+    background-color: white;
+    color: green;
+}
 
 .result-btns {
     display: flex;
