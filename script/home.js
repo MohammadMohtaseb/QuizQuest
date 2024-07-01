@@ -89,3 +89,7 @@ function searchVideos() {
 
 // Call searchVideos when the page loads
 window.onload = searchVideos;
+
+//Spare keys = 'AIzaSyDG-NJrJ18z6GRjufPFyJdEGcBfvvjkSGM'
+//Spare keys = 'AIzaSyAyfZEJKblYSwUwHEJybFQTq4rb9YBqkKA'
+//Spare keys = 'AIzaSyB2pS-OTTUJhjXP9xwl1vuUuk2YolD2cEU'
