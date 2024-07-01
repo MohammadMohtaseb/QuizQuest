@@ -142,6 +142,11 @@ document.addEventListener('DOMContentLoaded', () => {
         resultContainer.style.display = 'flex'; // Make result container visible
 
         scoreDisplay.textContent = `${score} / ${questions.length}`;
+
+        // Load the audio files
+        const passAudio = new Audio('../media/sound/claps-44774.mp3');
+        const failAudio = new Audio('../media/sound/wah-wah-sad-trombone-6347.mp3');
+
         
         if (score >= Math.ceil(0.5 * questions.length)) { // Assuming 50% of total questions, Example we are at question 3 => 0.5 * 3 = 1.5, Now the ceil function turns 1.5 to 1
             resultContainer.style.backgroundColor = 'green';
@@ -150,9 +155,12 @@ document.addEventListener('DOMContentLoaded', () => {
             showB.classList.remove('showB');
             showB.classList.add('showBPass');
             passOrFail.textContent = 'Passed';
+            passAudio.play(); // Play pass sound
+
         } else {
             resultContainer.style.backgroundColor = 'red';
             passOrFail.textContent = 'Failed';
+            failAudio.play(); // Play fail sound
         }
 
         // Add event listener to "Show results" button

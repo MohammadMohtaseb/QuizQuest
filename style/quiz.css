@@ -87,7 +87,8 @@ main {
 }
 
 .step.active {
-    background-color: var(--clr-mainSwitch);
+    background-color: var(--clr-main);
+    color: var(--clr-white);
 }
 
 .question {

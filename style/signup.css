@@ -15,6 +15,13 @@ body {
     color: var(--clr-red600);
     font-size: var(--size-xs);
 }
+/*style for the pop up custom alert*/
+.swal-custom-button {
+    width: 200px !important;
+    background-color: var(--clr-main) !important;
+    
+
+}
 
 .container {
     text-align: center;

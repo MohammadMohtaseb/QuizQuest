@@ -27,11 +27,38 @@ function login() {
                     console.log('User logged in:', sessionStorage.getItem('currentUser'));
 
                     // Redirect to dashboard page after setting sessionStorage
-                    alert(`Welcome ${userData.fullname}`)    
-                    window.location.href = "main.html";
+                    // alert(`Welcome ${userData.fullname}`)    
+                    
+                    //  alert 
+                    Swal.fire({
+                        title: "Welcome!",
+                        text: `Welcome ${userData.fullname}`,
+                        icon: "success",
+            
+                        customClass: {
+                            confirmButton: 'swal-custom-button' // Custom class for the OK button
+                        }
+                    }).then(() => {
+                        // Redirect to login page after acknowledging the alert
+                        window.location.href = "main.html";
+                    });
+            
+            
+
+
                 } else {
                     // Incorrect password
-                    alert("Incorrect password. Please try again.");
+                    // alert("Incorrect password. Please try again.");
+                    //  alert 
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Incorrect password. Please try again.",
+            
+                        customClass: {
+                            confirmButton: 'swal-custom-button' // Custom class for the OK button
+                        }
+                    });
                 }
             } catch (error) {
                 console.error('Error parsing user data from localStorage:', error);
@@ -43,7 +70,16 @@ function login() {
         }
     } else {
         // Missing email or password
-        alert("Please enter both email and password.");
+        // alert("Please enter both email and password.");
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Please enter both email and password.",
+
+            customClass: {
+                confirmButton: 'swal-custom-button' // Custom class for the OK button
+            }
+        });
     }
 }
 

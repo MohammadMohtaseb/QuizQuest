@@ -17,6 +17,15 @@ body {
     width: 500px;
 }
 
+
+
+/* alert */
+.swal-custom-button {
+    width: 200px !important;
+    background-color: var(--clr-main) !important;
+}
+
+
 .login_title {
     margin: 0;
     font-size: 2.5rem;

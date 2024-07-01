@@ -69,13 +69,36 @@ function signup(event) {
         localStorage.setItem(userdata.email, JSON.stringify(userdata));
         
         // Notify the user of successful signup and redirect to signin page
-        alert("Sign up successful");
-        window.location.href = "login.html";
+        //  alert 
+
+        Swal.fire({
+            title: "Welcome!",
+            text: "You have created a account successfuly",
+            icon: "success",
+
+            customClass: {
+                confirmButton: 'swal-custom-button' // Custom class for the OK button
+            }
+        }).then(() => {
+            // Redirect to login page after acknowledging the alert
+            window.location.href = "login.html";
+        });
+        // window.location.href = "login.html";
     } else {
         // Prevent form submission if validation fails
         // Notify the user to correct errors before signing up
         event.preventDefault();
-        alert("Please correct the errors before signing up.");
+
+        //  custom alert functionality
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Please correct the errors before signing up.",
+
+            customClass: {
+                confirmButton: 'swal-custom-button' // Custom class for the OK button
+            }
+        });
     }
 }
 
