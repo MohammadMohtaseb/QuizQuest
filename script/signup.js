@@ -56,11 +56,6 @@ signupButton.addEventListener("click", signup);
 
 // Function to handle form submission
 function signup(event) {
-    // Prevent form submission if validation fails
-    if (!(a && b && c && d)) {
-        event.preventDefault();
-    }
-    
     // If all fields are valid, store the data and redirect to signin page
     if (a && b && c && d) {
         const userdata = {
@@ -77,7 +72,9 @@ function signup(event) {
         alert("Sign up successful");
         window.location.href = "login.html";
     } else {
+        // Prevent form submission if validation fails
         // Notify the user to correct errors before signing up
+        event.preventDefault();
         alert("Please correct the errors before signing up.");
     }
 }

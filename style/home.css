@@ -9,11 +9,19 @@
 
 .dark_mode .theme_btn {
     color: var(--clr-dark);
-    background-color: var(--clr-white);
+    background-color: var(--clr-main);
+}
+
+.theme_btn {
+    color: var(--clr-white) !important;
+}
+
+.theme_btn:hover {
+    color: var(--clr-main);
 }
 
 .dark_mode .theme_btn:hover {
-    color: var(--clr-light);
+    color: var(--clr-white);
     background-color: var(--clr-dark);
 }
 

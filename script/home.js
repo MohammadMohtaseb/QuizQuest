@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// tryQuiz button function 
 const tryQuiz = document.getElementById("try_quiz");
 tryQuiz.addEventListener('click', checkIfSession);
 
@@ -63,7 +64,7 @@ function checkIfSession() {
 }
 
 function searchVideos() {
-    const apiKey = 'AIzaSyAn6PMksTdus8dF2i577GRPmujFYHPOiKs';
+    const apiKey = 'AIzaSyA39UQG9KZjyfUEsyPHW_RjL7LeDiU_VY8';
     const video = document.getElementById("vid");
     const query = "zaid";  // Replace with your desired search query
 

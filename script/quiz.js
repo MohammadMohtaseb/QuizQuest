@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         window.location.href = "login.html";
     }
+
     // Logout functionality
     const log = document.getElementById("logout");
     log.addEventListener("click", logout);
@@ -33,12 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
             time--;
             timerElement.textContent = formatTime(time);
             if (time <= 0) {
-                clearInterval(timer);
                 endQuiz();
             }
         }, 1000);
     }
 
+    // This function is for the timer format , to make it like this => '00:00' instead of this '300'
     function formatTime(seconds) {
         const minutes = Math.floor(seconds / 60);
         const remainingSeconds = seconds % 60;
@@ -97,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to update the progress bar
     function updateProgressBar(index) {
         const steps = document.querySelectorAll('.step');
-        steps.forEach((step, i) => {
+        steps.forEach((step, i) => {  // The "i" is the index of the array elemnent for the "forEach()" function, because "forEach()" is a for loop of an array."
             if (i <= index % 5) {
                 step.classList.add('active');
             } else {
@@ -105,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Update step text content
+        // Update step text content when we reach question 6
         if (index >= 5) {
             steps.forEach((step, i) => {
                 step.textContent = (i + 6).toString();
@@ -134,12 +135,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const showA = document.querySelector(".showA");
         const showB = document.querySelector(".showB");
         
-        resultContainer.style.zIndex = 11; // Bring result container to the front
+        resultContainer.style.zIndex = 2; // Bring result container to the front
         resultContainer.style.display = 'flex'; // Make result container visible
 
         scoreDisplay.textContent = `${score} / ${questions.length}`;
         
-        if (score >= Math.ceil(0.5 * questions.length)) { // Assuming 50% of total questions
+        if (score >= Math.ceil(0.5 * questions.length)) { // Assuming 50% of total questions, Example we are at question 3 => 0.5 * 3 = 1.5, Now the ceil function turns 1.5 to 1
             resultContainer.style.backgroundColor = 'green';
             showA.classList.remove('showA');
             showA.classList.add('showAPass');
