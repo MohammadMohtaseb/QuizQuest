@@ -42,10 +42,6 @@ function login() {
                         // Redirect to login page after acknowledging the alert
                         window.location.href = "main.html";
                     });
-            
-            
-
-
                 } else {
                     // Incorrect password
                     // alert("Incorrect password. Please try again.");

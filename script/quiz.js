@@ -144,8 +144,8 @@ document.addEventListener('DOMContentLoaded', () => {
         scoreDisplay.textContent = `${score} / ${questions.length}`;
 
         // Load the audio files
-        const passAudio = new Audio('../media/sound/claps-44774.mp3');
-        const failAudio = new Audio('../media/sound/wah-wah-sad-trombone-6347.mp3');
+        const passAudio = new Audio('../media/audio/claps-44774.mp3');
+        const failAudio = new Audio('../media/audio/wah-wah-sad-trombone-6347.mp3');
 
         
         if (score >= Math.ceil(0.5 * questions.length)) { // Assuming 50% of total questions, Example we are at question 3 => 0.5 * 3 = 1.5, Now the ceil function turns 1.5 to 1
