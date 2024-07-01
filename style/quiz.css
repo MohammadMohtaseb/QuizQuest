@@ -16,6 +16,12 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 3rem;
 }
 
+
+.main-blurred {
+    opacity: 0.5;
+    filter: blur(5px);
+    transition: opacity 0.5s ease, filter 0.5s ease;
+}
 /*------------------------------------------navbar--------------------------------------------*/
 
 .navbar {
@@ -321,17 +327,6 @@ main {
     font-size: 2rem;
     font-weight: bold;
 }
-
-/* .showA {
-    background-color: transparent;
-    color: #fff;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    border: 2px solid #fff;
-    border-radius: 1rem;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-} */
 
 .score_text {
     font-size: 1.5rem;

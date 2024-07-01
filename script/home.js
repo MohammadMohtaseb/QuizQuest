@@ -64,13 +64,11 @@ function checkIfSession() {
 }
 
 function searchVideos() {
-    const apiKey = 'AIzaSyA39UQG9KZjyfUEsyPHW_RjL7LeDiU_VY8';
+    const apiKey = 'AIzaSyBN5iPB6JtOWKjmWS1P9wdHFF7UAKnYYJo'; 
     const video = document.getElementById("vid");
-    const query = "zaid";  // Replace with your desired search query
+    const CHANNEL_ID = "UC6SPQ1_Q8b8k1n0Rb8wfyoA"; 
 
-    console.log('Fetching videos for query:', query);
-
-    fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(query)}&type=video&key=${apiKey}`)
+    fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=1`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
