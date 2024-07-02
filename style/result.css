@@ -11,6 +11,7 @@ body{
 .brand {
     margin-left: 0%;
     color: var(--clr-dark);
+    font-size: var(--size-3xl);
 }
 
 .brand:hover {

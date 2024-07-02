@@ -76,6 +76,7 @@ h6 {
 .brand {
     margin-left: 0%;
     color: var(--clr-dark);
+    font-size: var(--size-3xl);
 }
 
 .brand:hover {
@@ -169,6 +170,16 @@ h2 {
 
 
 /*-----------------------------------video_section-----------------------------------------------*/
+
+.video_section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    
+}
 
 .video_section{
     display: flex;

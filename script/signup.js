@@ -54,6 +54,7 @@ function email() {
 // Add event listener to the signup button for form submission
 signupButton.addEventListener("click", signup);
 
+
 // Function to handle form submission
 function signup(event) {
     // If all fields are valid, store the data and redirect to signin page

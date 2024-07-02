@@ -136,8 +136,8 @@
         },
         {
             "question": "How can you add a single line comment in JavaScript?",
-            "options": ["<!--comment -->", "// comment ", "'comment'", "/* comment */"],
-            "correctAnswer": "// This is a comment"
+            "options": ["<!-- comment -->", "// comment ", "'comment'", "/* comment */"],
+            "correctAnswer": "// comment"
         },
         {
             "question": "How do you declare a JavaScript variable?",

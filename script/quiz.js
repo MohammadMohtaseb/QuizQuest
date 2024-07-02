@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 questions = data[quizType];
                 currentQuestionIndex = 0;
                 loadQuestion(currentQuestionIndex);
-                startTimer(180); // Start timer for 60 seconds
+                startTimer(180); // Start timer for 3 minutes
             })
             .catch(error => console.error('Error fetching quiz data:', error));
     }

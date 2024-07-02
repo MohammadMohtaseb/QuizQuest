@@ -99,9 +99,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Retry quiz hover function
     const chooseTopic = document.querySelector(".chooseTopic");
     chooseTopic.addEventListener('mouseover', () => {
+        if(quizScore<10){
         chooseTopic.classList.remove("chooseTopic");
         chooseTopic.classList.add("chooseTopicHover");
         chooseTopic.textContent = "You Still can't get 10/10?";
+        }
+        else{
+            chooseTopic.classList.remove("chooseTopic");
+        chooseTopic.classList.add("chooseTopicHover");
+        chooseTopic.textContent = "Great job you got it!";
+        }
     })
 
     chooseTopic.addEventListener('mouseout', () => {

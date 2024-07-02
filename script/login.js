@@ -82,6 +82,7 @@ function login() {
 // Add event listener to the login button
 document.getElementById("login").addEventListener("click", login);
 
+
 // Check for dark mode preference and apply it
 if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark_mode');
