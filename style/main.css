@@ -71,8 +71,12 @@ h1 {
 }
 
 .user_name {
-    color: var(--clr-main);
+    color: var(--clr-mainSwitch);
     text-decoration: none;
+}
+
+.user_name:hover {
+    color: var(--clr-mainSwitch2);
 }
 
 /*------------------------------------------main_description--------------------------------------------*/
@@ -112,20 +116,20 @@ h1 {
 
 .quest_html:hover {
     background-color: var(--clr-main);
-    color: var(--clr-light);
+    color: var(--clr-gray500);
     transform: translateY(-6px);
     transform: translateX(-6px);
 }
 
 .quest_css:hover {
     background-color: var(--clr-main);
-    color: var(--clr-light);
+    color: var(--clr-gray500);
     transform: translateY(-6px);
 }
 
 .quest_javascript:hover {
     background-color: var(--clr-main);
-    color: var(--clr-light);
+    color: var(--clr-gray500);
     transform: translateY(-6px);
     transform: translateX(6px);
 }

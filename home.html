@@ -6,6 +6,7 @@
     <title>QuizQuest</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/style/utilities.css">
     <link rel="stylesheet" href="/style/home.css">
 </head>
@@ -26,8 +27,8 @@
                         <li class="nav-item my-3">
                             <a class=" active me-5 gray_text" aria-current="page" href="#video_sect">How it works?</a>
                         </li>
-                        <li class="nav-item me-3 my-3">
-                            <a class=" theme_btn" href="#">Dark Theme</a>
+                        <li class="nav-item me-5 my-4">
+                            <a class=" click_btn" ><i class="fa-solid fa-lightbulb fa-2xl" style="color: var(--clr-mainSwitch);"></i></a>
                         </li>
                         <li class="nav-item me-3 my-3">
                             <a id="login_btn" class=" btn" href="/login.html">Login</a>
@@ -44,65 +45,72 @@
         </div>
     </nav>
 
+    
     <section class="container section">
-        <div class="hero_section container" id="hero_sect">
-            <!-- Paragraph and image -->
-            <div class="left">
-                <div class="up">
-                    <h2>Welcome to Quiz<span class="main_clr">Quest</span>!</h2>
-                    At QuizQuest, our mission is to help employers assess the knowledge
-                    and skills of potential candidates through targeted quizzes. Whether
-                    you're applying for a web development position or just want to brush
-                    up on your skills, QuizQuest offers a comprehensive testing platform
-                    to ensure you are up to the challenge.
-                    <br><br>
-                    We offer three types of quizzes designed to evaluate your proficiency
-                    in key areas of web development:
-                    <ul class="remove_dot">
-                        <li>HTML Quiz</li>
-                        <li>CSS Quiz</li>
-                        <li>JavaScript Quiz</li>
-                        <br>
-                        <li><a id="try_quiz" class="btn">Try the quiz</a></li>
-                    </ul>
-                </div>
-                <div class="down">
-                    <h2>Why Quiz<span class="main_clr">Quest</span>?</h2>
-                    <div class="remove_dot">
-                        <p class="home_paragraphs">
-                            Timed Quizzes: Each quiz comes with a time limit to simulate
-                            real-world testing conditions and enhance your time management
-                            skills.
-                        </p>
-                        <p class="home_paragraphs">
-                            Multiple Choice Format: Our quizzes feature a
-                            choose-from-selection format, making it easier for you to focus on
-                            the content and demonstrate your knowledge effectively.
-                        </p>
-                        <p class="home_paragraphs">
-                            Answer Review: At the end of each quiz, you have the option to
-                            view the correct answers, allowing you to learn from your mistakes
-                            and improve your understanding of the material.
-                        </p>
+        <div id="up" class="up">
+            <div id="left" class="parent">
+                <h1>Welcome to Quiz<span class="main_clr">Quest</span>!</h1>
+                <p>We offer three types of quizzes designed to evaluate your proficiency
+                    in key areas of web development:</p>
+                <a id="try_quiz" class="btn">Try the quiz</a>
+            </div>
+            <div id="right">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                <dotlottie-player src="https://lottie.host/5ab35772-2bc1-4996-9ec6-4cff4f91cecb/aFlejAnw1b.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></dotlottie-player>
+            </div>
+    </section>
+
+    <section class="section container cards_section">
+        <div class="card_container">
+            <div class="cards_title">
+                <h2 class="cards_title-text">About Our Quizzes</h2>
+            </div>
+            <div class="cards_container">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="title">HTML Quiz</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="flipped_text">Test your knowledge of HTML, the backbone of web development. Our HTML quiz covers essential topics like elements, attributes, forms, and semantics.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="right">
-                <img src="/media/image/QuizPicLight.png" alt="QuizQuest user test image" data-dark-src="/media/image/QuizPicDark.jpg">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="title">CSS Quiz</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="flipped_text">Challenge yourself with questions on layout techniques, responsive design, animations, and the latest CSS3 features.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="title">JavaScript Quiz</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="flipped_text">Master the language of the web with our JavaScript quiz. From basic syntax and DOM manipulation to advanced concepts like closures, promises, and ES6+ features.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="container section">
         <div class="video_section-title">
-            <h2 class="title">A tour to our <span class="main_clr">website</span> </h2>
+            <h2 class="video_title">A tour to our website </h2>
         </div>
         <div class="video_section" id="video_sect">
-            <iframe id="vid" width="560" height="315" src="https://www.youtube.com/embed/example_video" frameborder="0" allowfullscreen></iframe>
+            <iframe id="vid" width="710" height="400" src="https://www.youtube.com/embed/example_video" frameborder="0" allowfullscreen></iframe>
         </div>
     </section>
 
     <footer>
+
         <div class="footer_section">
             <div class="footer_logo">
                 <a class="footer_logo-link" href="#hero_sect"> Quiz<span class="main_clr">Quest</span> </a>

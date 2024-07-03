@@ -14,12 +14,15 @@
     --clr-gray300: #d1d5db;
     --clr-main: #FCC822;
     --clr-mainSwitch: #191401;
+    --clr-mainSwitch2: #FCC822;
+    --clr-mainSwitch3: #FCC822;
     --clr-yellow300: #fde047;
     --clr-yellow500: #facc15;
     --clr-yellow700: #eab308;
     --clr-red600: #f43f5e;
     --clr-dark2: #333331;
-    
+    --clr-card_flip: #8c8c8c;
+
     /* --clr-green200: #d9f99d; */
 
     /* main 	rgb(252, 200, 34) */
@@ -50,7 +53,10 @@
     --clr-light: #262626;
     --clr-neutral800: #f1f5f9;
     --clr-mainSwitch: #FCC822;
+    --clr-mainSwitch2: #ffffff;
+    --clr-mainSwitch3: #333333;
     --clr-dark2: #FCC822;
+    --clr-card_flip: #b3b3b3;
 }
 
 .dark_mode .theme_btn {
@@ -128,12 +134,12 @@ h1, h2, h3, h4, h5, h6
     text-decoration: none;
     letter-spacing: -0.05em;
     background-color: var(--clr-main);
-    color: var(--clr-light);
+    color: #333333;
     padding: 0.5em 1em;
     border-radius: 6px;
-    box-shadow: 0 4px 5px rgba(252, 200, 34, 0.5), 
-                0 3px 3px rgba(234, 192, 51, 0.5), 
-                0 0 10px -10px var(--clr-main) ;
+    box-shadow: 0 10px 10px rgba(60, 60, 60, 0.5), 
+                0 6px 6px rgba(70, 70, 70, 0.5), 
+                0 0 10px -10px var(--clr-dark) ;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -150,8 +156,8 @@ h1, h2, h3, h4, h5, h6
     font-weight: 300;
     text-decoration: none;
     letter-spacing: -0.05em;
+    /* color: var(--clr-white); */
     background-color: var(--clr-white);
-    color: var(--clr-dark);
     transition: color 0.3s, background-color 0.3s;
     padding: 0.5em 1em;
     border-radius: 6px;

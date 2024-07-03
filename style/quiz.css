@@ -111,7 +111,7 @@ main {
     border-radius: 6px;
 }
 #question-text{
-    color: var(--clr-white);
+    color: black;
 }
 
 .options {
@@ -175,7 +175,7 @@ main {
 
 .finish {
     background-color: var(--clr-main);
-    color: var(--clr-white);
+    color: black;
     border: none;
     padding: 10px 20px;
     font-size: 18px;
