@@ -55,7 +55,7 @@ function checkIfSession() {
 }
 
 function searchVideos() {
-    const apiKey = 'AIzaSyB2pS-OTTUJhjXP9xwl1vuUuk2YolD2cEU'; 
+    const apiKey = 'AIzaSyD93xGsuAIJ1np90g-AawL_2iWko44MMdg'; 
     const video = document.getElementById("vid");
     const CHANNEL_ID = "UC6SPQ1_Q8b8k1n0Rb8wfyoA"; 
 
