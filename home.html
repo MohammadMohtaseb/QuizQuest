@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuizQuest</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/style/utilities.css">
     <link rel="stylesheet" href="/style/home.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg container nav_border" aria-label="Offcanvas navbar large">
         <div class="container-fluid">
             <a class="navbar-brand brand" href="#">Quiz<span class="main_clr">Quest</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+                aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end nav_list" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas offcanvas-end nav_list" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Q<span class="main_clr">Q</span></h5>
-                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -28,7 +38,8 @@
                             <a class=" active me-5 gray_text" aria-current="page" href="#video_sect">How it works?</a>
                         </li>
                         <li class="nav-item me-5 my-4">
-                            <a class=" click_btn" ><i class="fa-solid fa-lightbulb fa-2xl" style="color: var(--clr-mainSwitch);"></i></a>
+                            <a class=" click_btn"><i class="fa-solid fa-lightbulb fa-2xl"
+                                    style="color: var(--clr-mainSwitch);"></i></a>
                         </li>
                         <li class="nav-item me-3 my-3">
                             <a id="login_btn" class=" btn" href="/login.html">Login</a>
@@ -45,7 +56,7 @@
         </div>
     </nav>
 
-    
+
     <section class="container section">
         <div id="up" class="up">
             <div id="left" class="parent">
@@ -55,8 +66,11 @@
                 <a id="try_quiz" class="btn">Try the quiz</a>
             </div>
             <div id="right">
-                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-                <dotlottie-player src="https://lottie.host/5ab35772-2bc1-4996-9ec6-4cff4f91cecb/aFlejAnw1b.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></dotlottie-player>
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player src="https://lottie.host/5ab35772-2bc1-4996-9ec6-4cff4f91cecb/aFlejAnw1b.json"
+                    background="transparent" speed="1" style="width: 400px; height: 400px;" loop
+                    autoplay></dotlottie-player>
             </div>
     </section>
 
@@ -69,30 +83,74 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                viewBox="0,0,256,256" style="fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <g transform="scale(5.33333,5.33333)">
+                                        <path d="M41,5h-34l3,34l14,4l14,-4l3,-34z" fill="#fcc822"></path>
+                                        <path d="M24,8v31.9l11.2,-3.2l2.5,-28.7z" fill="#fcc822"></path>
+                                        <path
+                                            d="M24,25v-4h8.6l-0.7,11.5l-7.9,2.6v-4.2l4.1,-1.4l0.3,-4.5zM32.9,17l0.3,-4h-9.2v4z"
+                                            fill="#ffffff"></path>
+                                        <path
+                                            d="M24,30.9v4.2l-7.9,-2.6l-0.4,-5.5h4l0.2,2.5zM19.1,17h4.9v-4h-9.1l0.7,12h8.4v-4h-4.6z"
+                                            fill="#eeeeee"></path>
+                                    </g>
+                                </g>
+                            </svg>
                             <p class="title">HTML Quiz</p>
                         </div>
                         <div class="flip-card-back">
-                            <p class="flipped_text">Test your knowledge of HTML, the backbone of web development. Our HTML quiz covers essential topics like elements, attributes, forms, and semantics.</p>
+                            <p class="flipped_text">Test your knowledge of HTML, the backbone of web development. Our
+                                HTML quiz covers essential topics like elements, attributes, forms, and semantics.</p>
                         </div>
                     </div>
                 </div>
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                viewBox="0,0,256,256" style="fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <g transform="scale(5.33333,5.33333)">
+                                        <path d="M41,5h-34l3,34l14,4l14,-4l3,-34z" fill="#fcc822"></path>
+                                        <path d="M24,8v31.9l11.2,-3.2l2.5,-28.7z" fill="#fcc822"></path>
+                                        <path
+                                            d="M33.1,13h-9.1v4h4.9l-0.3,4h-4.6v4h4.4l-0.3,4.5l-4.1,1.4v4.2l7.9,-2.6l0.7,-11.5v0z"
+                                            fill="#ffffff"></path>
+                                        <path
+                                            d="M24,13v4h-8.9l-0.3,-4zM19.4,21l0.2,4h4.4v-4zM19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1,-1.4z"
+                                            fill="#eeeeee"></path>
+                                    </g>
+                                </g>
+                            </svg>
                             <p class="title">CSS Quiz</p>
                         </div>
                         <div class="flip-card-back">
-                            <p class="flipped_text">Challenge yourself with questions on layout techniques, responsive design, animations, and the latest CSS3 features.</p>
+                            <p class="flipped_text">Challenge yourself with questions on layout techniques, responsive
+                                design, animations, and the latest CSS3 features.</p>
                         </div>
                     </div>
                 </div>
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0,0,256,256"
+                            style="fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M6,42v-36h36v36z" fill="#fcc822"></path><path d="M29.538,32.947c0.692,1.124 1.444,2.201 3.037,2.201c1.338,0 2.04,-0.665 2.04,-1.585c0,-1.101 -0.726,-1.492 -2.198,-2.133l-0.807,-0.344c-2.329,-0.988 -3.878,-2.226 -3.878,-4.841c0,-2.41 1.845,-4.244 4.728,-4.244c2.053,0 3.528,0.711 4.592,2.573l-2.514,1.607c-0.553,-0.988 -1.151,-1.377 -2.078,-1.377c-0.946,0 -1.545,0.597 -1.545,1.377c0,0.964 0.6,1.354 1.985,1.951l0.807,0.344c2.745,1.169 4.293,2.363 4.293,5.047c0,2.892 -2.284,4.477 -5.35,4.477c-2.999,0 -4.702,-1.505 -5.65,-3.368zM17.952,33.029c0.506,0.906 1.275,1.603 2.381,1.603c1.058,0 1.667,-0.418 1.667,-2.043v-10.589h3.333v11.101c0,3.367 -1.953,4.899 -4.805,4.899c-2.577,0 -4.437,-1.746 -5.195,-3.368z" fill="#ffffff"></path></g></g>
+                            </svg>
                             <p class="title">JavaScript Quiz</p>
                         </div>
                         <div class="flip-card-back">
-                            <p class="flipped_text">Master the language of the web with our JavaScript quiz. From basic syntax and DOM manipulation to advanced concepts like closures, promises, and ES6+ features.</p>
+                            <p class="flipped_text">Master the language of the web with our JavaScript quiz. From basic
+                                syntax and DOM manipulation to advanced concepts like closures, promises, and ES6+
+                                features.</p>
                         </div>
                     </div>
                 </div>
@@ -105,7 +163,8 @@
             <h2 class="video_title">A tour to our website </h2>
         </div>
         <div class="video_section" id="video_sect">
-            <iframe id="vid" class="video_iframe" width="710" height="400" src="https://www.youtube.com/embed/example_video" frameborder="0" allowfullscreen></iframe>
+            <iframe id="vid" class="video_iframe" width="710" height="400"
+                src="https://www.youtube.com/embed/example_video" frameborder="0" allowfullscreen></iframe>
         </div>
     </section>
 
@@ -124,7 +183,10 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="/script/home.js"></script>
 </body>
+
 </html>

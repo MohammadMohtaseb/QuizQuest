@@ -192,6 +192,11 @@ h2 {
     margin-top: 10rem;
     margin-bottom: 13rem;
 }
+svg{
+    align-self: center;
+    height: 40%;
+    width: 40%;
+}
 
 .cards_title {
     display: flex;
@@ -202,6 +207,7 @@ h2 {
 .cards_title-text {
     font-size: var(--size-5xl);
     color: var(--clr-mainSwitch);
+    font-weight: bolder;
 }
 
 .card_container {
@@ -300,6 +306,7 @@ h2 {
     color: var(--clr-mainSwitch);
     font-size: var(--size-5xl);
     margin-bottom: 3rem;
+    font-weight: bolder;
 }
 
 .video_section{
