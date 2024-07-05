@@ -342,12 +342,8 @@ main {
     .container {
         max-width: 1280px;
     }
-    .showAPass, .showBPass {
-        font-size: 0.5rem !important;
-        width: fit-content;
-        height: 100px;
-    }
 }
+
   /* xl */
 @media (max-width: 1280px) {
     .container {
@@ -385,6 +381,18 @@ main {
     .container {
         max-width: 640px;
     }
+    a#back-to-main-btn.showBPass {
+        font-size: 0.8rem;
+        width: auto;
+        margin-right: 0;
+        height: 50px;
+    }
+    a#show-results-btn.showAPass {
+        font-size: 0.8rem;
+        width: auto;
+        margin-right: 0;
+        height: 50px;
+    }
 }
 
 /* sm */
@@ -405,15 +413,17 @@ main {
         flex-direction: column;
         align-items: center;
     }
-    a#back-to-main-btn.showB {
-        font-size: 0.5rem;
+    a#back-to-main-btn.showBPass {
+        font-size: 0.7rem;
         width: auto;
         margin-right: 0;
+        height: 50px;
     }
-    a#show-results-btn.showA {
-        font-size: 0.5rem;
+    a#show-results-btn.showAPass {
+        font-size: 0.7rem;
         width: auto;
         margin-right: 0;
+        height: 50px;
     }
 }
 
@@ -438,6 +448,12 @@ main {
     }
     .Score {
         font-size: 30px !important;
+    }
+    a#back-to-main-btn.showBPass {
+        height: 35px ;
+    }
+    a#show-results-btn.showAPass {
+        height: 35px ;
     }
 
 }
