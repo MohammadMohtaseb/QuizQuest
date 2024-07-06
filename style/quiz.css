@@ -356,6 +356,9 @@ main {
     .container {
         max-width: 768px;
     }
+    .options {
+        flex-direction: column;
+    }
     .result-container {
         position: relative;
         width: 50%;
