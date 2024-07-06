@@ -110,10 +110,19 @@ button {
     cursor: pointer;
     width: 20%;
     font-size: 20px;
+    box-shadow: 0 4px 5px rgba(252, 200, 34, 0.5), 
+    0 3px 3px rgba(234, 192, 51, 0.5), 
+    0 0 10px -10px var(--clr-main) ;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 button:hover {
-    background-color: var(--clr-main);
+    background-color: var(--clr-white);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(234, 192, 51, 0.25), 
+                0 10px 10px rgba(234, 192, 51, 0.25), 
+                0 0 10px -10px var(--clr-main) ;
+    color: var(--clr-main);   
 }
 
 .login {
